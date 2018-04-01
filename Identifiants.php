@@ -7,7 +7,7 @@
 		<link href="CSS_Identifiants.css" rel="stylesheet" type="text/css"/>
 	</head> 	
 	<body>
-		<FORM name="formulaire" METHOD="POST" action="Verfication.php" style ="margin-left:5px;">
+		<FORM name="formulaire" METHOD="POST" action="Verification.php" style ="margin-left:5px;">
 			<center><table id="B1" style="margin-top:200px;height:250px;width:500px;border-width:0.5px;"></center>
 			<tr>
 			<td style="font-size:18px;">
@@ -18,7 +18,7 @@
 			<tr>
 			<td style="font-size:18px;">
 				<br><b>Mot de passe :</b><input placeholder="Mot de passe" type="password" 
-				style="margin-left:20px;margin-right:5%" size=20 name="Code" value="" required></br>
+				style="margin-left:20px;margin-right:5%" size=20 name="Mdp" value="" required></br>
 			</td>
 			</tr>
 			<tr>

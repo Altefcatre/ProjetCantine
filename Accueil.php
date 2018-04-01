@@ -7,7 +7,22 @@
 		<link href="CSS_Accueil.css" rel="stylesheet" type="text/css"/>
 	</head> 	
 	<body>
-
+	<?php session_start();
+	$donnees = $_SESSION['donnees'];
+/*	$Identifiant = $donnees['identifiant'];
+		$Mdp = $donnees['mdp'];
+		$Solde = $donnees['solde'];	
+		$Statut = $donnees['statut'];
+		 echo $Identifiant;
+		 echo("<p>");
+		  echo $Mdp;
+		  echo("<p>");
+		   echo $Solde;
+		   echo("<p>");
+		    echo $Statut;
+			echo("<p>");
+*/		 
+	?>
 		<center><table id="B1" style="margin-top:150px;height:500px;width:500px;border-width:0.5px;">
 			<tr>
 			<td>
