@@ -1,3 +1,10 @@
+<?php
+session_start();
+if($_SESSION['donnees'] != NULL){
+	session_destroy();
+}
+?>
+
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />

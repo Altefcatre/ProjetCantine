@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
@@ -7,7 +11,6 @@
 	<link href="CSS_Identifiants.css" rel="stylesheet" type="text/css"/>
 
 <?php
-	session_start();
 	$Identifiant = $_POST['Id'];
 	$Mdp = $_POST['Mdp'];
 	
@@ -18,7 +21,7 @@
 		die('Erreur :'.$e->getMessage());
 	}
 	
-	$reponse = $bdd->query("SELECT * FROM etudiants"); 
+	$reponse = $bdd->query("SELECT * FROM etudiants");
 	$bonIdentifiant = 0;
 	while ($donnees = $reponse->fetch()){
 		if($Identifiant == $donnees['identifiant'] && $Mdp == $donnees['mdp']){
