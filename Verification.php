@@ -21,7 +21,7 @@
 		die('Erreur :'.$e->getMessage());
 	}
 	
-	$reponse = $bdd->query("SELECT * FROM etudiants");
+	$reponse = $bdd->query("SELECT * FROM utilisateurs");
 	$bonIdentifiant = 0;
 	while ($donnees = $reponse->fetch()){
 		if($Identifiant == $donnees['identifiant'] && $Mdp == $donnees['mdp']){
