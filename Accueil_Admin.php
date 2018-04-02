@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$donnees = $_SESSION['donnees']; 
+$donnees = $_SESSION['donnees'];
 ?>
 <html>
 	<head>
@@ -14,17 +14,17 @@ $donnees = $_SESSION['donnees'];
 		<center><table id="B1" style="margin-top:150px;height:500px;width:500px;border-width:0.5px;">
 			<tr>
 			<td>
-				<a href="Reservation.php"><input class="btn-choice" type="button" value="Reservation repas"></a>
+				<a href="Reservation_Admin.php"><input class="btn-choice" type="button" value="Reservation Repas"></a>
 			</td>
 			</tr>
 			<tr>
 			<td>
-				<a href="InfosCompte.php"><input class="btn-choice" type="button" value="Consulter mon compte"></a>
+				<a href="InfosCompte_Admin.php"><input class="btn-choice" type="button" value="Consulter Compte"></a>
 			</td>
 			</tr>
 			<tr>
 			<td>
-				<a href="RechargerCompte.php"><input class="btn-choice" type="button" value="Recharger mon compte"></a>
+				<a href="RechargerCompte_Admin.php"><input class="btn-choice" type="button" value="Recharger Compte"></a>
 			</td>
 			</tr>
 			<tr>
