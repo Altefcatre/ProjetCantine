@@ -29,7 +29,10 @@
 			$reponse->closeCursor(); // Termine le traitement de la requête
 			$_SESSION['donnees'] = $donnees;
 ?>
-	<meta http-equiv="refresh" content="1; URL=Accueil.php">
+	<meta http-equiv="refresh" content="1; URL=<?php if($donnees['statut'] == 0){
+											echo "Accueil_Admin.php"; }
+											else{
+											echo "Accueil.php"; }?>">
 	</head> 	
 <body/>
 	
