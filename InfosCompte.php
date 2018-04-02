@@ -1,3 +1,7 @@
+<?php session_start();
+$donnees = $_SESSION['donnees'];
+?>
+
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
@@ -10,12 +14,28 @@
 	<center><table id="B1" style="margin-top:50px;height:200px;width:500px;border-width:0.5px;">
 			<tr>
 			<td>
-				<br>Statut :</br>
+				<br>Statut : <?php 
+				$statut = $donnees['statut'];
+				switch ($statut) {
+					case 0:
+						echo "Admin";
+						break;
+					case 1:
+						echo "&Eacute;tudiant";
+						break;
+					case 2:
+						echo "Professeur";
+						break;
+					case 3:
+						echo "Personnel";
+						break;
+				}?>
+				</br>
 			</td>
 			</tr>
 			<tr>
 			<td>
-				<br>Solde du compte :</br>
+				<br>Solde du compte : <?php echo $donnees['solde'];?> &euro;</br>
 			</td>
 			</tr>
 	</table></center>
@@ -26,6 +46,6 @@
 			</td>
 			</tr>
 	</table></center>
-	<a href="Accueil.html"><input class="btn-retour" type="button" value="Retour"></a>
+	<a href="Accueil.php"><input class="btn-retour" type="button" value="Retour"></a>
 </body>
 </html>

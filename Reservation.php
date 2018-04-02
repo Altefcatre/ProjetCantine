@@ -30,8 +30,19 @@ $idUser = $donnees['identifiant'];
 			$reponse->closeCursor(); // Termine le traitement de la requête
 		}
 	}
-	
-		
+	$statut = $donnees['statut'];
+	switch($statut){
+		case 1: // etudiant 5 euros
+			$prix = 5;
+			break;
+		case 2: // prof 7 euros
+			$prix = 7;
+			break;
+		case 3: // personnel 7 euros
+			$prix = 7;
+			break;
+	}
+	$solde = $donnees['solde'];
 	
 	?>
 	<center><table id="B1" style="margin-top:50px;height:200px;width:500px;border-width:0.5px;">
@@ -43,9 +54,12 @@ $idUser = $donnees['identifiant'];
 				switch ($reserve) {
 					case 0:
 						echo "Non Reserv&eacute";
+						echo "<br />Solde = ".$solde." &euro;";
+						echo "<br />Prix d'un repas = ".$prix." &euro;";
 						break;
 					case 1:
 						echo "Reserv&eacute";
+						echo "<br />Solde = ".$solde." &euro;";
 						break;
 					default:
 						echo "Bug";
@@ -57,7 +71,7 @@ $idUser = $donnees['identifiant'];
 			</tr>
 			<tr>
 			<td>
-			<?php $_SESSION['idUser'] = $idUser; 
+			<?php 
 				switch ($reserve) {
 					case 0:
 						echo "<br><a href=\"ReserveRepas.php\"><input class=\"btn-reserver\" type=\"button\" value=\"Reserver\"></a>

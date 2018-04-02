@@ -1,15 +1,7 @@
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<title>Reservation cantine</title>
-		<meta name="author" content="Talmant Benjamin" />
-		<link href="CSS_Accueil.css" rel="stylesheet" type="text/css"/>
-	</head> 	
-	<body>
-	<?php session_start();
+<?php session_start();
 	$donnees = $_SESSION['donnees'];
-/*	$Identifiant = $donnees['identifiant'];
+/*	$_SESSION['donnees'] = $donnees;
+	$Identifiant = $donnees['identifiant'];
 		$Mdp = $donnees['mdp'];
 		$Solde = $donnees['solde'];	
 		$Statut = $donnees['statut'];
@@ -23,6 +15,15 @@
 			echo("<p>");
 */		 
 	?>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<title>Reservation cantine</title>
+		<meta name="author" content="Talmant Benjamin" />
+		<link href="CSS_Accueil.css" rel="stylesheet" type="text/css"/>
+	</head> 	
+	<body>
 		<center><table id="B1" style="margin-top:150px;height:500px;width:500px;border-width:0.5px;">
 			<tr>
 			<td>
