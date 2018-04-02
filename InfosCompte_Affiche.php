@@ -42,7 +42,7 @@ $donnees_admin = $_SESSION['donnees'];
 		$safeVar = 0;
 		echo "<script>alert(\"L'utilisateur n'existe pas\")</script>"; 
 ?>
-		<meta http-equiv="refresh" content="0; URL=RechargerCompte_Admin.php">
+		<meta http-equiv="refresh" content="0; URL=InfosCompte_Admin.php">
 	</head> 	
 <body>
 
@@ -53,7 +53,7 @@ $donnees_admin = $_SESSION['donnees'];
 		$safeVar = 0;
 		echo "<script>alert(\"Votre mot de passe est incorrect\")</script>";
 		?>
-		<meta http-equiv="refresh" content="0; URL=RechargerCompte_Admin.php">
+		<meta http-equiv="refresh" content="0; URL=InfosCompte_Admin.php">
 	</head> 	
 	<?php 
 	}

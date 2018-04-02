@@ -14,7 +14,7 @@ $donnees = $_SESSION['donnees'];
 		<center><table id="B1" style="margin-top:150px;height:500px;width:500px;border-width:0.5px;">
 			<tr>
 			<td>
-				<a href="Reservation_Admin.php"><input class="btn-choice" type="button" value="Reservation Repas"></a>
+				<a href="Reservation_AdminLogin.php"><input class="btn-choice" type="button" value="Reservation Repas"></a>
 			</td>
 			</tr>
 			<tr>
