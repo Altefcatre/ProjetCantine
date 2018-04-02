@@ -1,4 +1,5 @@
-<?php session_start();
+<?php 
+session_start();
 $donnees = $_SESSION['donnees'];
 $idUser = $donnees['identifiant'];
 ?>
