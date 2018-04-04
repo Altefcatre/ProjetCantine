@@ -32,15 +32,19 @@ $idUser = $donnees['identifiant'];
 		}
 	}
 	$statut = $donnees['statut'];
+	$strStatut = "";
 	switch($statut){
 		case 1: // etudiant 5 euros
 			$prix = 5;
+			$strStatut = "&Eacute;tudiant";
 			break;
 		case 2: // prof 7 euros
 			$prix = 7;
+			$strStatut = "Professeur";
 			break;
 		case 3: // personnel 7 euros
 			$prix = 7;
+			$strStatut = "Personnel";
 			break;
 	}
 	$solde = $donnees['solde'];
@@ -56,6 +60,7 @@ $idUser = $donnees['identifiant'];
 					case 0:
 						echo "Non Reserv&eacute";
 						echo "<br />Solde = ".$solde." &euro;";
+						echo "<br />Statut = ".$strStatut;
 						echo "<br />Prix d'un repas = ".$prix." &euro;";
 						break;
 					case 1:
